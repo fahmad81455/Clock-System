@@ -1,0 +1,67 @@
+body{
+    background-image: url(beach.jpg);
+    background-size: cover;
+}
+.digital{
+background-image:url(digital.png);
+height: 400px;
+width: 48%;
+border: 3px;
+border-radius: 10%;
+border-style: double;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+font-style: italic;
+float: left;
+margin-bottom: 5px;
+background-size: cover;
+}
+.analog{
+    background-image:url(analog.png);
+    height: 400px;
+    width: 49%;
+    border: 3px;
+    border-radius: 10%;
+    border-style: double;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    margin-bottom: 5px;
+}
+.stopwatch{
+    background-image:url(stopwatch.png);
+    height: 400px;
+    width: 48%;
+    border: 3px;
+    border-radius: 10%;
+    border-style: double;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+.timer{
+    background-image:url(timer.png);
+    height: 400px;
+    width: 49%;
+    border: 3px;
+    border-radius: 10%;
+    border-style: double;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+
+}
+

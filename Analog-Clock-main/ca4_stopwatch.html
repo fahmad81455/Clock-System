@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ca4_stopwatch.css">
+</head>
+<body>
+    <div class="stopwatch">
+        <h1 id="displaytime">00:00:00</h1>
+        <div class="button">
+            <img src="stopicon.png" alt="stop button" onclick="watchstop()">
+            <img src="playicon.jpg" alt="Play button"  onclick="watchstart()">
+            <img src="reseticon.png" alt="Reset button" onclick="watchreset()">
+
+
+        </div>
+    </div>
+    <script>
+        
+        let[seconds, minutes, hours]= [0,0,0];
+        let displayTime=document.getElementById("displaytime");
+        let timer;
+        var interval;
+
+        function stopwatch(){
+            seconds++;
+            if(seconds==60)
+            {
+                seconds=0;
+                minutes++;
+                if(minutes==0)
+                {
+                    minutes=o;
+                    hours++;
+                }
+            }
+            displayTime.innerHTML= hours+":"+minutes+":"+seconds;
+        }
+        function watchstart()
+        {
+            if(!timer)
+            {
+                timer= new Date().getTime();
+                interval=setInterval(stopwatch,1000);
+            }
+        }
+
+        function watchstop()
+        {
+           clearInterval(interval);
+           timer=null;
+           
+
+        }
+
+        function watchreset()
+        {
+            clearInterval(timer);
+            [seconds, minutes, hours]=[0,0,0];
+            displayTime.innerHTML="00:00:00";
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
